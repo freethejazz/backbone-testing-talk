@@ -3,7 +3,8 @@ require.config({
     jquery: '../bower_components/jquery/dist/jquery',
     underscore: '../bower_components/underscore/underscore',
     backbone: '../bower_components/backbone/backbone',
-    hbs: '../bower_components/require-handlebars-plugin/hbs'
+    hbs: '../bower_components/require-handlebars-plugin/hbs',
+    tmpl: '../templates'
   },
   shim: {
     underscore: {
