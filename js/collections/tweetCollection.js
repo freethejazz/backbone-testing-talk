@@ -1,12 +1,12 @@
 define([
   'backbone',
-  'underscore'
-], function(Backbone, _) {
+  'underscore',
+  'js/models/tweetModel'
+], function(Backbone, _, TweetModel) {
 
-  var TweetCollection = Backbone.View.extend({
-
-
-  
+  var TweetCollection = Backbone.Collection.extend({
+    model: TweetModel,
+    url: '/allTweets'
   });
 
   return TweetCollection;
